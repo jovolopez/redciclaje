@@ -1,0 +1,33 @@
+header {
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: solid 1px #cccccc;
+}
+
+.logo,nav {
+    width: 100%;
+}
+
+.logo > *, nav > * {
+    margin: auto;
+}
+
+.logo .svg {
+    width: fit-content;
+}
+
+ul {
+    color: #636363;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    width: 850px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul, ul li a{
+    color: #636363;
+    text-decoration: none;
+    list-style-type: none;
+}
