@@ -1,0 +1,22 @@
+.main-text-cont {
+    max-width: 600px;
+    margin: auto;
+}
+
+.banner-one {
+    z-index: -1;
+    width: 90%;
+    height: 100px;
+    position: absolute;
+    background: url(/storage/banner-one.jpg);
+    display: none; /* TODO */
+}
+
+.main-text-cont h1 {
+    margin: 20px 0;
+}
+
+.main-text-cont p {
+    line-height: 31px;
+    margin-bottom: 20px;
+}
