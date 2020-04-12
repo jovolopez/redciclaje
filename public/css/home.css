@@ -1,22 +1,162 @@
 .main-text-cont {
+    width: 90%;
     max-width: 600px;
     margin: auto;
-}
-
-.banner-one {
-    z-index: -1;
-    width: 90%;
-    height: 100px;
-    position: absolute;
-    background: url(/storage/banner-one.jpg);
-    display: none; /* TODO */
-}
-
-.main-text-cont h1 {
-    margin: 20px 0;
 }
 
 .main-text-cont p {
     line-height: 31px;
     margin-bottom: 20px;
+}
+
+.title-section {
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.title-section .content {
+    padding: 25px;
+}
+
+
+.title-section .content h1 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner-one {
+    background: url(/storage/banner-one.jpg);
+    background-size: cover;
+}
+
+.banner-one .content {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.29) 0%,rgb(255, 255, 255) 100%);
+}
+
+.large-logo-cont {
+    height: 300px;
+}
+
+.large-logo-cont img {
+    z-index: -1;
+    position: absolute;
+    right: 200px;
+}
+
+.text-group-three {
+    padding: 25px;
+    margin: 80px 0;
+    background: #76C558;
+    box-shadow: 0 0 27px rgba(0,0,0,0.25);
+}
+
+.target {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.left-section-target {
+    width: 200px;
+    text-align: center;
+}
+
+.left-section-target h1{
+    font-weight: 600;
+    color: white;
+}
+
+.text-target {
+    width: 70%;
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.text-target p {
+    line-height: 31px;
+    color: white;
+    font-size: 18px;
+}
+
+
+.text-group-four {
+    padding: 25px;
+    background: url(/storage/banner-two.jpg);
+    background-size: cover;
+    box-shadow: 0 0 27px rgba(0,0,0,0.25);
+
+}
+
+.desc-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-section-desc {
+    border: 1px solid white;
+    padding: 30px;
+    width: 340px;
+}
+
+
+.title-desc h1{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.text-desc p {
+    line-height: 31px;
+    color: white;
+    font-size: 18px;
+}
+
+.desc-contact {
+    width: 220px;
+}
+
+@media only screen and (max-width: 670px) {
+
+    .desc-contact {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .target {
+        justify-content: center;
+        text-align: center;
+        flex-flow: wrap;
+    }
+
+    .text-target {
+        margin-right: 0;
+        margin-top: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .text-group-two {
+        background: #ffffff8f;
+    }
+
+}
+
+  @media only screen and (max-width: 1600px) {
+
+    .large-logo-cont img {
+        z-index: -1;
+        position: absolute;
+        right: 25px;
+    }
+
 }
