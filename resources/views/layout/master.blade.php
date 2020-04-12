@@ -21,7 +21,10 @@
                 <a href="/">
                     <img src="/storage/logo.svg" alt="Redciclaje" srcset="">
                 </a>
-            </div>             
+            </div>
+            <div class="burger-menu">
+                <img src="/storage/menu.svg" alt="Burger Menu" srcset="">
+            </div>
         </div>
         <div class="bot-header-line">
             <ul class="nav-bar">
@@ -30,6 +33,20 @@
                 <li><a href="/actualidad-y-eventos">Actualidad y eventos</a></li>
                 <li><a href="/chile-emprende">Chile emprende</a></li>
                 <li><a href="/plataforma">Plataforma Redciclar</a></li>
+            </ul>
+        </div>
+        <div class="vertical-header-menu">
+            <ul>
+                <li><a href="/como-reciclar">Cómo redciclar</a></li>
+                <hr>
+                <li><a href="/mapa">Mapa</a></li>
+                <hr>
+                <li><a href="/actualidad-y-eventos">Actualidad y eventos</a></li>
+                <hr>
+                <li><a href="/chile-emprende">Chile emprende</a></li>
+                <hr>
+                <li><a href="/plataforma">Plataforma Redciclar</a></li>
+                <hr>
             </ul>
         </div>
     </header>
@@ -45,7 +62,9 @@
     <script>
         let body    = document.querySelector('body');
         let a       = document.querySelector('a');
-        let loading = document.querySelector('.loading')
+        let loading = document.querySelector('.loading');
+        let menuBtn = document.querySelector('.burger-menu');
+        let menu    = document.querySelector('.vertical-header-menu');
 
         window.onload = function() {
             loading.style.opacity = 0;
@@ -57,6 +76,10 @@
         a.onclick = function() {
             body.style.opacity = 0;
         };
+
+        menuBtn.onclick = function() {
+            menu.classList.toggle('active');
+        }
     </script>
     @yield('script')
 </body>
