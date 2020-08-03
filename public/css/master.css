@@ -13,7 +13,11 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: normal;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 /* LOADING PROPERTIES (ANIMATE.CSS COPYRIGHT)*/
@@ -109,25 +113,25 @@ header {
     top: -75px;
 }
 
-header .top-header-line, header .bot-header-line {
+header .top-bar, header .bot-bar {
     width: 100%;
 }
 
-.top-header-line .logo-cont {
+.top-bar .logo-cont {
     width: fit-content;
     margin: auto;
     max-width: 80%;
 }
 
-header .top-header-line .logo-cont img {
+header .top-bar .logo-cont img {
     width: 100%;
 }
 
-.top-header-line .burger-menu {
+.top-bar .hamburger-menu {
     display: none;
 }
 
-.bot-header-line .nav-bar {
+.bot-bar .nav-bar {
     margin: 0 auto;
     margin-top: 15px;
     max-width: 850px;
@@ -138,16 +142,16 @@ header .top-header-line .logo-cont img {
     font-size: 14px;
 }
 
-.bot-header-line .nav-bar li a {
+.bot-bar .nav-bar li a {
     margin: auto;
     color: #636363;
 }
 
-.vertical-header-menu {
+.menu-mobile {
     height: 0;
     overflow: hidden;
     font-size: 20px;
-    line-height: 143px;
+    line-height: 15vh;
     text-align: right;
     display: flex;
     align-items: center;
@@ -156,19 +160,14 @@ header .top-header-line .logo-cont img {
     transition: height ease-in-out 0.3s;
 }
 
-.vertical-header-menu.active {
-    height: 91vh;
+.menu-mobile.active {
+    height: calc(100vh - 50px);
 }
 
 /* FOOTER PROPERTIES */
 footer {
     z-index: 10;
     width: 100%;
-}
-
-footer .footer-text {
-    margin: 10px auto;
-    width: fit-content;
 }
 
 footer .footer-text {
@@ -182,8 +181,11 @@ footer .footer-text .logo-footer {
     top: 3px;
 }
 
+footer .footer-text svg {
+    width: 13px;
+}
+
 main {
-    max-width: 1100px;
     margin: 50px auto;
     margin-bottom: 0;
 }
@@ -195,19 +197,19 @@ main {
         top: 0;
     }
 
-    header .top-header-line {
+    header .top-bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    header .top-header-line .burger-menu {
+    header .top-bar .hamburger-menu {
         width: 9%;
         max-width: 35px;
         display: block;
     }
 
-    header .bot-header-line {
+    header .bot-bar {
       display: none;
     }
 
@@ -216,7 +218,7 @@ main {
 /* MOBILE RESPONSIVE */
 @media only screen and (max-width: 550px) {
 
-    header .top-header-line .logo-cont {
+    header .top-bar .logo-cont {
         margin: initial;
     }
 
