@@ -3,8 +3,10 @@
     <link rel="stylesheet" href="/css/home.css">
 @endsection
 @section('content')
+
+<section class="sect-a">
     <div class="text-group">
-        <div class="title-section banner-one">
+        <div class="title-section banner-one" loading="lazy">
             <div class="content">
                 <h1>REDCICLAJE</h1>
             </div>
@@ -14,9 +16,16 @@
             <p>De esta manera, se busca informar y facilitar la coordinación a una comunidad de usuarios interesados para reciclar de forma adecuada, además de invitar cada vez a más personas a unirse al cambio.</p>
         </div>
     </div>
+</section>
+
+
+{{-- <section class="sect-b">
     <div class="large-logo-cont">
         <img src="/storage/logo-gradient.png" alt="" srcset="" width="350px">
     </div>
+</section> --}}
+
+<section class="sect-c">
     <div class="text-group text-group-two">
         <div class="title-section">
             <div class="content">
@@ -27,7 +36,10 @@
             <p>A diferencia de reciclar, es el acto de darle a nuestros "desechos" (¡MUY POCAS COSAS SON VERDADERAMENTE BASURA!) un destino que involucre procesos sustentables y sostenibles para ayudar a nuestro planeta, considerando siempre el concepto de economía circular.</p>
         </div>
     </div>
+</section>
 
+
+<section class="sect-d">
     <div class="text-group text-group-three">
         <div class="target">
             <div class="left-section-target">
@@ -56,8 +68,10 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div class="text-group text-group-four">
+<section class="sect-e">
+    <div class="text-group text-group-four" loading="lazy">
         <div class="desc-section">
             <div class="left-section-desc">
                 <div class="title-desc">
@@ -79,5 +93,6 @@
             </div>
         </div>
     </div>
+</section>
 
 @endsection

@@ -1,12 +1,18 @@
+section > div {
+    max-width: 1100px;
+    margin: auto;
+}
+
 .main-text-cont {
     width: 90%;
-    max-width: 600px;
+    max-width: 720px;
     margin: auto;
 }
 
 .main-text-cont p {
     line-height: 31px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .title-section {
@@ -21,7 +27,7 @@
 
 
 .title-section .content h1 {
-    max-width: 600px;
+    max-width: 705px;
     margin: 0 auto;
 }
 
@@ -44,9 +50,14 @@
     right: 200px;
 }
 
+.sect-d {
+    background: linear-gradient(0, transparent, white 48%);
+    position: relative;
+    top: 220px;
+}
+
 .text-group-three {
     padding: 25px;
-    margin: 80px 0;
     background: #76C558;
     box-shadow: 0 0 27px rgba(0,0,0,0.25);
 }
@@ -81,13 +92,25 @@
     font-size: 18px;
 }
 
+.sect-e {
+    background: url(/storage/banner-two.jpg);
+    background-size: cover;
+}
+
+/*.sect-e::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1));
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}*/
 
 .text-group-four {
     padding: 25px;
-    background: url(/storage/banner-two.jpg);
-    background-size: cover;
-    box-shadow: 0 0 27px rgba(0,0,0,0.25);
-
 }
 
 .desc-section {
@@ -95,6 +118,8 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 65px;
+    margin-top: 350px;
 }
 
 .left-section-desc {
@@ -117,6 +142,17 @@
 
 .desc-contact {
     width: 220px;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 30px;
+    margin-top: -50px;
+}
+
+.footer-text p, .footer-text svg path {
+    color: white;
 }
 
 @media only screen and (max-width: 670px) {
