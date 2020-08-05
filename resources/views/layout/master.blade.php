@@ -18,38 +18,30 @@
     </div>
 
     <header>
-        <div class="top-bar">
+        <div class="header-cont">
             <div class="logo-cont">
                 <a href="/">
                     <img src="/storage/logo-new.svg" alt="Redciclaje" srcset="">
                 </a>
             </div>
-            <div class="hamburger-menu">
-                <img src="/storage/menu.svg" alt="Hamburger Menu" srcset="">
-            </div>
-        </div>
-        <div class="bot-bar">
             <ul class="nav-bar">
                 <li><a href="/como-reciclar">Cómo redciclar</a></li>
                 <li><a href="/mapa">Mapa</a></li>
-                <li><a href="/actualidad-y-eventos">Actualidad y eventos</a></li>
                 <li><a href="/chile-emprende">Chile emprende</a></li>
-                <li><a href="/plataforma">Plataforma Redciclar</a></li>
             </ul>
-        </div>
-        <div class="menu-mobile">
-            <ul>
-                <li><a href="/como-reciclar">Cómo redciclar</a></li>
-                <hr>
-                <li><a href="/mapa">Mapa</a></li>
-                <hr>
-                <li><a href="/actualidad-y-eventos">Actualidad y eventos</a></li>
-                <hr>
-                <li><a href="/chile-emprende">Chile emprende</a></li>
-                <hr>
-                <li><a href="/plataforma">Plataforma Redciclar</a></li>
-                <hr>
-            </ul>
+            <div class="hamburger-menu">
+                <img src="/storage/menu.svg" alt="Hamburger Menu" srcset="">
+            </div>
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="/como-reciclar">Cómo redciclar</a></li>
+                    <hr>
+                    <li><a href="/mapa">Mapa</a></li>
+                    <hr>
+                    <li><a href="/chile-emprende">Chile emprende</a></li>
+                    <hr>
+                </ul>
+            </div>
         </div>
     </header>
     <main>

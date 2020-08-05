@@ -105,36 +105,45 @@ h1 {
 /* HEADER PROPERTIES */
 header {
     z-index: 10;
+    width: 100%;
     padding: 15px;
-    border-bottom: #DADADA solid 1px;
-	background: #FFFFFF;
+    background: #ffffff5c;
+    backdrop-filter: blur(8px);
     box-shadow: 0 4px 22px rgba(0, 0, 0, 0.03);
-    position: sticky;
-    top: -75px;
+    position: fixed;
+    top: 0;
 }
 
-header .top-bar, header .bot-bar {
+header .header-cont {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-cont {
+    width: 240px;
+    /* width: fit-content; */
+    /* margin: auto; */
+    /* max-width: 80%; */
+    margin: 0 30px;
+}
+
+header .logo-cont img {
     width: 100%;
 }
 
-.top-bar .logo-cont {
-    width: fit-content;
-    margin: auto;
-    max-width: 80%;
-}
-
-header .top-bar .logo-cont img {
-    width: 100%;
-}
-
-.top-bar .hamburger-menu {
+header .hamburger-menu {
+    width: 9%;
+    max-width: 35px;
     display: none;
 }
 
-.bot-bar .nav-bar {
-    margin: 0 auto;
-    margin-top: 15px;
+header .nav-bar {
     max-width: 850px;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     padding-inline-start: 0;
@@ -142,7 +151,7 @@ header .top-bar .logo-cont img {
     font-size: 14px;
 }
 
-.bot-bar .nav-bar li a {
+.nav-bar li a {
     margin: auto;
     color: #636363;
 }
@@ -153,7 +162,7 @@ header .top-bar .logo-cont img {
     font-size: 20px;
     line-height: 15vh;
     text-align: right;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: flex-end;
     padding-right: 15px;
@@ -193,24 +202,16 @@ main {
 /* TABLET RESPONSIVE */
 @media only screen and (max-width: 768px) {
 
-    header {
-        top: 0;
-    }
-
-    header .top-bar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    header .top-bar .hamburger-menu {
-        width: 9%;
-        max-width: 35px;
+    header .hamburger-menu {
         display: block;
     }
 
-    header .bot-bar {
-      display: none;
+    header .nav-bar {
+        display: none;
+    }
+
+    header .menu-mobile {
+        display: flex;
     }
 
 }
@@ -218,7 +219,7 @@ main {
 /* MOBILE RESPONSIVE */
 @media only screen and (max-width: 550px) {
 
-    header .top-bar .logo-cont {
+    header .logo-cont {
         margin: initial;
     }
 
