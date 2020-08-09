@@ -108,13 +108,22 @@ header {
     width: 100%;
     padding: 15px;
     background: #ffffff5c;
-    backdrop-filter: blur(8px);
     box-shadow: 0 4px 22px rgba(0, 0, 0, 0.03);
     position: fixed;
     top: 0;
+    box-sizing: border-box;
+    transition: background ease .3s;
 }
 
-header .header-cont {
+header.scroll {
+    background: #ffffffed;
+}
+
+header.active {
+    background: #fffffff5;
+}
+
+header nav {
     width: 100%;
     max-width: 1300px;
     display: flex;
@@ -125,9 +134,6 @@ header .header-cont {
 
 .logo-cont {
     width: 240px;
-    /* width: fit-content; */
-    /* margin: auto; */
-    /* max-width: 80%; */
     margin: 0 30px;
 }
 
@@ -170,7 +176,7 @@ header .nav-bar {
 }
 
 .menu-mobile.active {
-    height: calc(100vh - 50px);
+    height: 500px;
 }
 
 /* FOOTER PROPERTIES */

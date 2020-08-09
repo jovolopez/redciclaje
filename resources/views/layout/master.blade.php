@@ -18,7 +18,7 @@
     </div>
 
     <header>
-        <div class="header-cont">
+        <nav>
             <div class="logo-cont">
                 <a href="/">
                     <img src="/storage/logo-new.svg" alt="Redciclaje" srcset="">
@@ -32,16 +32,16 @@
             <div class="hamburger-menu">
                 <img src="/storage/menu.svg" alt="Hamburger Menu" srcset="">
             </div>
-            <div class="menu-mobile">
-                <ul>
-                    <li><a href="/como-reciclar">Cómo redciclar</a></li>
-                    <hr>
-                    <li><a href="/mapa">Mapa</a></li>
-                    <hr>
-                    <li><a href="/chile-emprende">Chile emprende</a></li>
-                    <hr>
-                </ul>
-            </div>
+        </nav>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="/como-reciclar">Cómo redciclar</a></li>
+                <hr>
+                <li><a href="/mapa">Mapa</a></li>
+                <hr>
+                <li><a href="/chile-emprende">Chile emprende</a></li>
+                <hr>
+            </ul>
         </div>
     </header>
     <main>
@@ -62,6 +62,7 @@
         let body    = document.querySelector('body');
         let a       = document.querySelector('a');
         let loading = document.querySelector('.loading');
+        let header  = document.querySelector('header');
         let menuBtn = document.querySelector('.hamburger-menu');
         let menu    = document.querySelector('.menu-mobile');
 
@@ -78,7 +79,16 @@
 
         menuBtn.onclick = function() {
             menu.classList.toggle('active');
-        }
+            header.classList.toggle('active');
+        };
+
+        window.onscroll = function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        };
     </script>
     @yield('script')
 </body>

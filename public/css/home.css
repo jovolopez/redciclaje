@@ -7,32 +7,20 @@ section > div {
     margin: auto;
 }
 
-.text-section {
+article {
     width: 90%;
     max-width: 720px;
     margin: auto;
 }
 
-.text-section p {
+article p {
     line-height: 31px;
     margin-bottom: 20px;
     text-align: justify;
 }
 
-.title-section {
-    width: 95%;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-.title-section .content {
-    padding: 25px;
-}
-
-
-.title-section .content h1 {
-    max-width: 705px;
-    margin: 0 auto;
+article h1 {
+    padding: 25px 0 25px;
 }
 
 .sect-a {
@@ -121,7 +109,6 @@ section > div {
     width: 340px;
 }
 
-
 .title-desc h1{
     color: white;
     margin-bottom: 30px;
@@ -168,14 +155,6 @@ footer {
     .text-target {
         margin-right: 0;
         margin-top: 25px;
-    }
-
-}
-
-@media only screen and (max-width: 1050px) {
-
-    .text-group-two {
-        background: #ffffff8f;
     }
 
 }

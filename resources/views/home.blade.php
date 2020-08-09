@@ -5,27 +5,15 @@
 @section('content')
 
 <section class="sect-a">
-    <div class="text-group">
-        <div class="title-section" loading="lazy">
-            <div class="content">
-                <h1>Quienes somos</h1>
-            </div>
-        </div>
-        <div class="text-section">
-            <p>Redciclaje nace como proyecto a modo de acción ante la urgencia ambiental actual, en donde no sólo es necesaria la intención de reciclar sino hacerlo de manera consciente y adecuada, teniendo en cuenta que el Reciclaje no es sino el último eslabón en los pasos para una economía circular (reducir, reutilizar, reciclar). </p>
-            <p>De esta manera, se busca informar y facilitar la coordinación a una comunidad de usuarios interesados para reciclar de forma adecuada, además de invitar cada vez a más personas a unirse al cambio.</p>
-        </div>
-    </div>
-    <div class="text-group">
-        <div class="title-section">
-            <div class="content">
-                <h1>¿Qué es Redciclar?</h1>
-            </div>
-        </div>
-        <div class="text-section">
-            <p>A diferencia de reciclar, es el acto de darle a nuestros "desechos" (¡MUY POCAS COSAS SON VERDADERAMENTE BASURA!) un destino que involucre procesos sustentables y sostenibles para ayudar a nuestro planeta, considerando siempre el concepto de economía circular.</p>
-        </div>
-    </div>
+    <article>
+        <h1>Quienes somos</h1>
+        <p>Redciclaje nace como proyecto a modo de acción ante la urgencia ambiental actual, en donde no sólo es necesaria la intención de reciclar sino hacerlo de manera consciente y adecuada, teniendo en cuenta que el Reciclaje no es sino el último eslabón en los pasos para una economía circular (reducir, reutilizar, reciclar). </p>
+        <p>De esta manera, se busca informar y facilitar la coordinación a una comunidad de usuarios interesados para reciclar de forma adecuada, además de invitar cada vez a más personas a unirse al cambio.</p>
+    </article>
+    <article>
+        <h1>¿Qué es Redciclar?</h1>
+        <p>A diferencia de reciclar, es el acto de darle a nuestros "desechos" (¡MUY POCAS COSAS SON VERDADERAMENTE BASURA!) un destino que involucre procesos sustentables y sostenibles para ayudar a nuestro planeta, considerando siempre el concepto de economía circular.</p>
+    </article>
 </section>
 
 <section class="sect-b" loading="lazy">
