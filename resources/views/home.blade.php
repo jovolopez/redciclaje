@@ -16,7 +16,24 @@
     </article>
 </section>
 
-<section class="sect-b" loading="lazy">
+<section class="sect-b">
+    <h1>Próximos eventos</h1>
+    <div class="event-box">
+        @for ($i = 0; $i < 5; $i++)
+            <div class="event">
+                <h4>Lorem ipsum dolor sit amet c</h4>
+                @if ($i%2)
+                <p>Lorem ipsum dolor sit amet cLorem ipsum dolor sit amet c</p>
+                @else
+                <p>Lorem ipsum dolor sit amet cLorem ipsum</p>
+                @endif
+                <button>Más info</button>
+            </div>
+        @endfor
+    </div>
+</section>
+
+<section class="sect-c">
     <div class="text-group-container">
         <div class="text-group text-group-three">
             <div class="target">
